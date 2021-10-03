@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Bookshelf App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="profile-and-add-wrapper">
+        <div class="profile-container">
+          <img src="images/profile.svg" alt="profile" />
+          <div class="info-profile-container">
+            <p style="font-weight: 400; font-size: 0.75rem">
+              Muhammad Furqon Fahlevi
+            </p>
+            <p style="font-size: 0.625rem; opacity: 60%">
+              Beginner Front-End Web Developer
+            </p>
+          </div>
+        </div>
+
+        <div class="add-books-container">
+          <p style="font-weight: 500; text-align: center">Add New Book</p>
+          <div class="add-books-items">
+            <form class="form-container" action="#" id="form">
+              <input
+                type="text"
+                name="book-title"
+                class="form-box"
+                id="title"
+                placeholder="Title"
+                required
+              />
+              <input
+                type="text"
+                name="book-author"
+                class="form-box"
+                id="author"
+                placeholder="Author"
+                required
+              />
+              <input
+                type="number"
+                name="book-year"
+                class="form-box"
+                id="year"
+                placeholder="Year"
+                required
+              />
+              <div class="checked">
+                <input
+                  type="checkbox"
+                  name="Checkbox"
+                  id="checked"
+                  class="checkbox"
+                />
+                <p>Readed Book</p>
+              </div>
+              <div class="form-btn">
+                <input type="submit" value="Submit" class="submit-btn" />
+                <input type="reset" value="Reset" class="reset-btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bookshelf-wrapper">
+        <p class="title-app">Bookshelf App</p>
+        <div class="books-container-wrapper">
+          <div class="books-container">
+            <h3 class="type-books">Unread Books</h3>
+            <div class="inner-books-container" id="style-2">
+              <div class="book-items" id="unread"></div>
+            </div>
+          </div>
+
+          <div class="separated-line"></div>
+
+          <div class="books-container">
+            <h3 class="type-books">Readed Books</h3>
+            <div class="inner-books-container" id="style-2">
+              <div class="book-items" id="read"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

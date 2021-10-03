@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  background-color: #272727;
+  justify-content: space-between;
+  padding: 40px 100px;
+  margin: 0 auto;
+}
+
+.name-logo a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  padding-bottom: 13px;
+  border-bottom: 2px solid white;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* main */
+main {
+  padding: 50px 100px;
+}
+/* section home --------*/
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* pic */
+.pic-container {
+  width: 100%;
+}
+
+.pic-container svg {
+  width: 100%;
+}
+
+/* aside */
+aside {
+  order: 0;
+  width: 70%;
+  font-size: 3.5em;
+  text-align: left;
+}
+
+aside h1 {
+  width: 80%;
+}
+
+/* section about --------*/
+#about {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  background-color: white;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.about-heading {
+  margin: 0 auto;
+  width: 5%;
+}
+
+.about-heading a {
+  color: black;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.7em;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40%;
+  text-align: center;
+}
+
+.profile-text {
+  width: 60%;
+}
+
+.profile-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  font-size: 1.5em;
+}
+
+/* section skills --------*/
+
+.skills-heading {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 5%;
+}
+
+.skills-heading a {
+  color: black;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.7em;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-img {
+  order: 2;
+  width: 40%;
+  text-align: center;
+}
+
+.skills-profile {
+  width: 60%;
+}
+
+.skills-profile article h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.skills-profile article p {
+  margin-bottom: 10px;
+}
+
+.skills-box {
+  margin-bottom: 15px;
+  border: none;
+}
+
+.skills-box-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #bdbdbd;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.skill-bar {
+  background: #bdbdbd;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+  border: none;
+}
+
+.skill-level-before {
+  background-color: #777777;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.skill-level {
+  background: #272727;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.percentage-box {
+  background-color: lightgreen;
+  width: 100%;
+}
+
+.first-item {
+  display: flex;
+  gap: 10px;
+}
+
+/* footer --------*/
+.social-media-icons {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.social-media-icons svg:hover {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  nav ul {
+    width: 30%;
+  }
+
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  aside h1 {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .about-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .profile-text {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+
+  .skills-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .skills-content {
+    flex-direction: column;
+  }
+
+  .skills-img {
+    width: 100%;
+    order: 1;
+  }
+
+  .skills-profile {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 43%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  main {
+    padding: 50px;
+    /* margin-top: 200px; */
+  }
+
+  nav {
+    padding: 50px;
+  }
+
+  nav ul {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3b3b;
+    /* z-index: 99; */
+    gap: 3em;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 13px;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 40.5px;
+    height: 28px;
+    opacity: 0;
+    left: -6.6px;
+    top: -3px;
+    z-index: 2;
+  }
+
+  .menu-toggle input:hover {
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    border-radius: 2px;
+    width: 27px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.8s;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  aside h1 {
+    font-size: 0.7em;
+  }
+
+  .profile-img img {
+    width: 100%;
+  }
+
+  .profile-text h2 {
+    font-size: 1.5em;
+  }
+
+  .profile-text p {
+    font-size: 1em;
+  }
+
+  .skills-img img {
+    width: 100%;
+  }
+
+  .skills-profile article h2 {
+    font-size: 1.5em;
+  }
+}
